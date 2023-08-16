@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev
+  namespace: argocd
+spec:
+  project: dev
+  source:
+    repoURL: git@https://github.com/ma-sharifi/argocd-demo.git
+    targetRevision: main
+    path: dev
+  destination:
+    server: https://localhost
+    namespace: default
+  syncPolicy:
+    automated: {}

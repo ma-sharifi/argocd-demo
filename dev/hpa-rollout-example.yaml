@@ -7,7 +7,7 @@ spec:
   maxReplicas: 6
   minReplicas: 2
   scaleTargetRef:
-    apiVersion: argoproj.io/v1alpha1
+    apiVersion: apps/v1
     kind: Deployment
     name: myapp
   targetCPUUtilizationPercentage: 80

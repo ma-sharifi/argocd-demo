@@ -16,9 +16,12 @@ spec:
         - name: myapp
           image: picher/argocd-demo:latest
           ports:
-            - containerPort: 9090
+            - containerPort: 8080
+          env:
+            - name: server.port
+              value: "9001"
           resources:
             requests:
-              cpu: 200m
-            limits:
               cpu: 500m
+            limits:
+              cpu: 900m

@@ -2,7 +2,6 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-rollout-example
-  namespace: argocd
 spec:
   maxReplicas: 6
   minReplicas: 2

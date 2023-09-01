@@ -5,13 +5,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: myapp-label
+      app: myapp
   replicas: 1
   revisionHistoryLimit: 1  #field in a Deployment to specify how many old ReplicaSets for this Deployment you want to retain. The rest will be garbage-collected in the background. By default, it is 10.
   template:
     metadata:
       labels:
-        app: myapp-label
+        app: myapp
     spec:
       containers:
         - name: myapp

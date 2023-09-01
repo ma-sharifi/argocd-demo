@@ -1,5 +1,6 @@
 #https://stackoverflow.com/questions/62800892/kubernetes-hpa-on-aks-is-failing-with-error-missing-request-for-cpu
-# kubectl describe hpa myapp-hpa -n myapp
+# kubectl describe hpa -n myapp
+# kubectl get hpa -n myapp
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
